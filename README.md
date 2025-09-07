@@ -1,4 +1,4 @@
-Socratic Tutor Chatbot (Self-Hosted) 
+          Socratic Tutor Chatbot (Self-Hosted) 
 Self hosted AI chatbot that uses Ollama for local LLM inference
 
 Runs locally — no API keys, no cloud costs.
