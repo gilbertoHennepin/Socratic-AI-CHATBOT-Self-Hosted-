@@ -1,3 +1,10 @@
+# install 
+# pip install PyQt6 requests
+
+# run on termial
+# python app.py
+
+
 from flask import Flask, request, jsonify, render_template
 import requests
 
@@ -9,7 +16,9 @@ MODEL = "llama3"
 
 SYSTEM_PROMPT = (
     "You are a Socratic tutor. Ask guiding questions first; "
-    "then hints; only full answers if explicitly requested."
+    "then hints; only full answers if explicitly requested. "
+    "⚠️ Exception: if the user says 'I don't know', 'idk', or something similar, "
+    "skip Socratic questioning and provide a direct, helpful answer instead."
 )
 
 def chat_ollama(messages):
